@@ -1,0 +1,79 @@
+body {
+    background: url('your_name_phone.jpeg') 100% fixed;
+    background-size: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    background: rgba(225, 178, 231, 0.534);
+    border-radius: 5px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    padding: 5px;
+    color: rgb(2, 1, 34);
+}
+
+div .sm,
+.md,
+.lg,
+.e-lg {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(214, 90, 8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media(max-width:768px) {
+    .sm {
+        display: block;
+        filter: contrast(150%);
+    }
+    .md,
+    .lg,
+    .e-lg {
+        display: none;
+    }
+}
+
+@media(min-width:768px) and (max-width:992px) {
+    .md {
+        display: block;
+        filter: contrast(150%);
+    }
+    .sm,
+    .lg,
+    .e-lg {
+        display: none;
+    }
+}
+
+@media(min-width:992px) and (max-width:1200px) {
+    .lg {
+        display: block;
+        filter: contrast(150%);
+    }
+    .sm,
+    .md,
+    .e-lg {
+        display: none;
+    }
+}
+
+@media(min-width:1200px) {
+    .e-lg {
+        display: block;
+        filter: contrast(150%);
+    }
+    .sm,
+    .md,
+    .lg {
+        display: none;
+    }
+}
